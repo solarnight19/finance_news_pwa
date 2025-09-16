@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finance News PWA</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <h1>📂 My News Folders</h1>
+  <div id="folders">
+    <button onclick="openFolder('finance')">💹 Finance News</button>
+  </div>
+
+  <div id="content" style="display:none;">
+    <button onclick="goHome()">⬅ Back</button>
+    <h2 id="folderTitle"></h2>
+    <div id="newsContent">Loading...</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+<script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("service-worker.js");
+}
+</script>
+
+</html>

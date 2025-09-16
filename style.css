@@ -1,0 +1,34 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+  background: #f4f4f4;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+#folders button, #content button {
+  display: block;
+  margin: 10px auto;
+  padding: 12px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  background: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+#folders button:hover, #content button:hover {
+  background: #45a049;
+}
+
+#newsContent {
+  margin-top: 20px;
+  text-align: left;
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+}
